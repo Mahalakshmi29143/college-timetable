@@ -1,16 +1,56 @@
-# React + Vite
+# 📅 AI College Scheduler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent timetable generator built using React that automatically creates conflict-free academic schedules.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Automatic timetable generation
+🤖 AI-powered document scanner (Gemini API)
+🧠 Smart scheduling logic (no clashes)
+🧪 Lab session handling (3-hour blocks)
+📊 Multi-year support (1st–4th Year)
+🔄 Dynamic UI updates
+📥 Export timetable as image
+🖨️ Print-friendly layout
 
-## React Compiler
+Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React.js
+Tailwind CSS
+Gemini AI API
+html2canvas
+Lucide Icons
 
-## Expanding the ESLint configuration
+Preview
+<img width="1137" height="660" alt="Screenshot 2026-04-18 083505" src="https://github.com/user-attachments/assets/e3bba30d-119a-4746-8502-d030c0e72b3c" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1138" height="664" alt="Screenshot 2026-04-18 083533" src="https://github.com/user-attachments/assets/97b7dcaf-5553-4615-9623-919bb8f9d685" />
+
+<img width="1139" height="423" alt="Screenshot 2026-04-18 083610" src="https://github.com/user-attachments/assets/5a40dba7-52d7-4dc4-9f9d-49ec1616e77b" />
+
+
+
+
+
+
+
+How It Works
+
+1. Add staff manually OR upload allocation sheet
+2. Define constraints (optional)
+3. Click **Generate Master Plan**
+4. View timetable by year
+5. Export or print timetable
+
+Key Logic
+
+Prevents faculty clashes across years
+Limits subject repetition per day
+Automatically assigns lab blocks
+Fills empty slots with self-study
+
+Installation
+
+```bash
+npm install
+npm start
